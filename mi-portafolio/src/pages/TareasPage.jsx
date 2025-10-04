@@ -1,0 +1,38 @@
+import { Link } from 'react-router-dom'
+
+function TareasPage() {
+  return (
+    <div className="tareas-page">
+      <header>
+        <h1>📚 Mis Tareas</h1>
+        <p>Todas mis tareas escolares</p>
+      </header>
+
+      <div className="tareas-grid">
+        <div className="tarea-card">
+          <h3>Tarea 7 - Tipologia</h3>
+          <p>Elaborar una tipologia de los contenidos que hay en internet</p>
+          <Link to="/tarea7"><button>Ver tarea</button></Link>
+        </div>
+        
+        <div className="tarea-card">
+          <h3>Tarea 8 - Sorpresa</h3>
+          <p>AAAAAAAAAAAAAAAAA</p>
+          <Link to="/tarea8"><button>Ver tarea</button></Link>
+        </div>
+
+        <div className="tarea-card">
+          <h3>Tarea 9 - idK</h3>
+          <p>eeeeeeeee</p>
+          <Link to="/tarea9"><button>Ver tarea</button></Link>
+        </div>
+      </div>
+
+      <Link to="/" className="back-button">
+        ← Volver al inicio
+      </Link>
+    </div>
+  )
+}
+
+export default TareasPage
