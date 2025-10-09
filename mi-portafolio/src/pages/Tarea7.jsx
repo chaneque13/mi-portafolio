@@ -1,22 +1,132 @@
-
 import { Link } from 'react-router-dom'
+import './Tarea7.css'
 
 function Tarea7() {
   return (
     <div className="tarea-page">
-      <h1>Tipologias</h1>
-      <h2>Elaborar una tipologia de los contenidos que hay en internet</h2>
-      <p>
-        Considero que los contenidos de internet pueden ser divididos en sociales, educativos, entretenimiento, económicos. Siendo los sociales: redes sociales, comunicacion con otras personas, tambien entraria el jugar con otras personas.
-        Los educativos, contenidos de estudio ya sea por medio de foros (que son sociales tambien), por medio de videos (que es un medio de entretenimiento tambien), y por medio de plataformas de educacion como coursera, edx, classroom, educ.
-        Los de entretenimiento como los juegos, los streams, los videos de youtube, netflix, y mas paginas de streaming, el entretenimiento no solo son medios para divertirnos, pueden ser hasta educativos o sociales, por supuesto en el lado económico 
-        también son importantes, mueven una economía, desde las mensualidades de netflix, hbo, la compra de juegos, o el pago que se les da a los youtubers por anuncios y visitas, no se diga de las donaciones de streamers.
-        Y el económico, que pueden ser desde apps bancarias, cuestiones más burocráticas, a criptomonedas, y por supuesto los ejemplos anteriores.
-        Al final de cuenttas decidí dividirlos en 4. Porque si nos damos cuenta se relacionan, el entretenimiento necesita dinero y público, lo social es necesario ya que sin este las redes pierden sentido,
-        somos seres sociales después de todo, y eso así mismo se interconecta con jugar en línea, ver películas en netflix con tu familia, todos estos medios se interconetan, por eso deicidí que son los contenidos más importantes.
-      </p>
+      <header className="tarea-header">
+        <h1>📊 Tipología de Contenidos en Internet</h1>
+        <p className="subtitle">Análisis y clasificación de los tipos de contenido web</p>
+      </header>
+
+      <div className="tarea-content">
+        <section className="intro-section">
+          <h2>🔍 Introducción</h2>
+          <p>
+            La tipología web nos permite clasificar y entender mejor los diversos contenidos que 
+            encontramos en internet. Esta clasificación ayuda a comprender cómo interactuamos 
+            digitalmente y cómo estos contenidos se interrelacionan.
+          </p>
+        </section>
+              <h2>🎯 Mis 4 Categorías Principales</h2>
+        <section className="tipologia-grid">
       
-      
+          
+          <div className="categoria-card">
+            <div className="categoria-header">
+              <span className="categoria-icon">👥</span>
+              <h3>Social</h3>
+            </div>
+            <div className="categoria-content">
+              <p><strong>Definición:</strong> Contenidos que facilitan la interacción humana</p>
+              <ul>
+                <li>Redes sociales (Facebook, Instagram, Twitter)</li>
+                <li>Plataformas de comunicación (WhatsApp, Discord)</li>
+                <li>Juegos multijugador en línea</li>
+                <li>Foros y comunidades</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="categoria-card">
+            <div className="categoria-header">
+              <span className="categoria-icon">🎓</span>
+              <h3>Educativo</h3>
+            </div>
+            <div className="categoria-content">
+              <p><strong>Definición:</strong> Contenidos para aprendizaje y desarrollo</p>
+              <ul>
+                <li>Plataformas educativas (Coursera, edX, Classroom)</li>
+                <li>Tutoriales en video (YouTube educativo)</li>
+                <li>Documentación técnica</li>
+                <li>Foros especializados</li>
+              </ul>
+              <p className="nota">💡 <em>Nota: Muchos contenidos educativos usan formatos sociales y de entretenimiento</em></p>
+            </div>
+          </div>
+
+          <div className="categoria-card">
+            <div className="categoria-header">
+              <span className="categoria-icon">🎮</span>
+              <h3>Entretenimiento</h3>
+            </div>
+            <div className="categoria-content">
+              <p><strong>Definición:</strong> Contenidos para ocio y diversión</p>
+              <ul>
+                <li>Streaming (Netflix, HBO, YouTube)</li>
+                <li>Videojuegos y plataformas gaming</li>
+                <li>Contenido multimedia</li>
+                <li>Redes sociales de entretenimiento</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="categoria-card">
+            <div className="categoria-header">
+              <span className="categoria-icon">💼</span>
+              <h3>Económico</h3>
+            </div>
+            <div className="categoria-content">
+              <p><strong>Definición:</strong> Contenidos relacionados con transacciones y finanzas</p>
+              <ul>
+                <li>Banca en línea y fintech</li>
+                <li>E-commerce (Amazon, Mercado Libre)</li>
+                <li>Criptomonedas y trading</li>
+                <li>Plataformas de pago (PayPal, Stripe)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="analisis-section">
+          <h2>🔗 Análisis de Interconexión</h2>
+          <div className="interconexion">
+            <p>
+              <strong>Lo más interesante es cómo estas categorías se interrelacionan:</strong>
+            </p>
+            <ul>
+              <li>🎮 <strong>El entretenimiento necesita lo económico:</strong> Suscripciones, compras en juego, patrocinios</li>
+              <li>👥 <strong>Lo social es fundamental:</strong> Sin interacción humana, las plataformas pierden sentido</li>
+              <li>🎓 <strong>Lo educativo se mezcla:</strong> Usa formatos de entretenimiento para ser más efectivo</li>
+              <li>💼 <strong>Lo económico impulsa todo:</strong> Monetiza las otras categorías</li>
+            </ul>
+            <p className="conclusion">
+              <strong>Conclusión:</strong> Esta clasificación en 4 categorías principales permite entender 
+              la complejidad de internet, donde rara vez encontramos contenido "puro". La interconexión 
+              entre estas categorías es lo que hace tan rica y diversa la experiencia web actual.
+            </p>
+          </div>
+        </section>
+
+        <section className="ejemplos-section">
+          <h2>🌐 Ejemplos Prácticos</h2>
+          <div className="ejemplos-grid">
+            <div className="ejemplo-item">
+              <h4>YouTube</h4>
+              <p>Combina: 🎮 Entretenimiento + 🎓 Educación + 💼 Economía</p>
+            </div>
+            <div className="ejemplo-item">
+              <h4>Discord</h4>
+              <p>Combina: 👥 Social + 🎮 Entretenimiento + 🎓 Educación</p>
+            </div>
+            <div className="ejemplo-item">
+              <h4>Coursera</h4>
+              <p>Combina: 🎓 Educación + 💼 Economía + 👥 Social</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <Link to="/" className="back-button">
         ← Volver al portafolio
       </Link>
