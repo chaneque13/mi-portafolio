@@ -1,0 +1,211 @@
+
+.tarea-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarea-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tarea-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tarea-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.intro-section, .estructura-section, .metodos-section, 
+.codigos-section, .flujo-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.code-block {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+.componentes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.componente-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.componente-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+
+.metodos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.metodo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.metodo-card:hover {
+  transform: translateY(-5px);
+}
+
+.metodo-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metodo-badge {
+  background: #667eea;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.get .metodo-badge { background: #28a745; }
+.post .metodo-badge { background: #fd7e14; }
+.put .metodo-badge { background: #17a2b8; }
+.delete .metodo-badge { background: #dc3545; }
+.patch .metodo-badge { background: #6f42c1; }
+
+
+.codigos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.codigo-categoria {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.codigo-categoria h3 {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid;
+}
+
+.categoria-100 { border-color: #17a2b8; color: #17a2b8; }
+.categoria-200 { border-color: #28a745; color: #28a745; }
+.categoria-300 { border-color: #ffc107; color: #ffc107; }
+.categoria-400 { border-color: #fd7e14; color: #fd7e14; }
+.categoria-500 { border-color: #dc3545; color: #dc3545; }
+
+
+.flujo-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  position: relative;
+}
+
+.step-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.back-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarea-page {
+    padding: 1rem;
+  }
+  
+  .tarea-header h1 {
+    font-size: 2rem;
+  }
+  
+  .componentes-grid,
+  .metodos-grid,
+  .codigos-grid,
+  .flujo-steps {
+    grid-template-columns: 1fr;
+  }
+}
