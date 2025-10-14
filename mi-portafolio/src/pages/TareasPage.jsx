@@ -16,8 +16,8 @@ function TareasPage() {
         </div>
         
         <div className="tarea-card">
-          <h3>Tarea 8 - Sorpresa</h3>
-          <p>AAAAAAAAAAAAAAAAA</p>
+          <h3>Tarea 8 - Protocolo HTTP</h3>
+          <p>Explicacion del protocolo</p>
           <Link to="/tarea8"><button>Ver tarea</button></Link>
         </div>
 
