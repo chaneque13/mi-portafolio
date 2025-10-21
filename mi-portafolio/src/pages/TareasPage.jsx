@@ -22,8 +22,8 @@ function TareasPage() {
         </div>
 
         <div className="tarea-card">
-          <h3>Tarea 9 - idK</h3>
-          <p>eeeeeeeee</p>
+          <h3>Tarea 9 - Puertos de internet</h3>
+          <p>Protocolos, puertos y sus aplicaciones</p>
           <Link to="/tarea9"><button>Ver tarea</button></Link>
         </div>
       </div>
