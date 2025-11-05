@@ -26,7 +26,15 @@ function TareasPage() {
           <p>Protocolos, puertos y sus aplicaciones</p>
           <Link to="/tarea9"><button>Ver tarea</button></Link>
         </div>
+
+          <div className="tarea-card">
+          <h3>Tarea 11 - lINEA DEL TIEMPO </h3>
+          <p>Linea del tiempo basada en la presentacion de las tecnologias disruptivas</p>
+          <Link to="/tarea11"><button>Ver tarea</button></Link>
+        </div>
+
       </div>
+
 
       <Link to="/" className="back-button">
         ← Volver al inicio

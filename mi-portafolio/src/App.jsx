@@ -5,6 +5,7 @@ import Tarea8 from './pages/Tarea8'
 import Tarea9 from './pages/Tarea9'
 import TareasPage from './pages/TareasPage'
 import BlogPage from './pages/BlogPage'
+import Tarea11 from './pages/Tarea11' 
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <Route path="/tarea8" element={<Tarea8 />} />
         <Route path="/tarea9" element={<Tarea9 />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/tarea11" element={<Tarea11 />} />
       </Routes>
     </div>
   )
