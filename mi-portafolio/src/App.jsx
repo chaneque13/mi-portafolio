@@ -5,7 +5,14 @@ import Tarea8 from './pages/Tarea8'
 import Tarea9 from './pages/Tarea9'
 import TareasPage from './pages/TareasPage'
 import BlogPage from './pages/BlogPage'
-import Tarea11 from './pages/Tarea11' 
+import Tarea11 from './pages/Tarea11'
+import TareaCircuitos from './pages/TareaCircuitos' 
+import Resistencias from './pages/circuitos/resistencias'
+import Capacitores from './pages/circuitos/capacitores'
+import Inductores from './pages/circuitos/inductores'
+import Diodos from './pages/circuitos/diodos'
+import Transistores from './pages/circuitos/transistores'
+import Bibliografia from './pages/circuitos/bibliografia'
 
 function App() {
   return (
@@ -60,6 +67,13 @@ function App() {
         <Route path="/tarea9" element={<Tarea9 />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/tarea11" element={<Tarea11 />} />
+        <Route path="/tareacircuitos" element={<TareaCircuitos />} />
+         <Route path="/circuitos/resistencias" element={<Resistencias />} />
+        <Route path="/circuitos/capacitores" element={<Capacitores />} />
+        <Route path="/circuitos/inductores" element={<Inductores />} />
+        <Route path="/circuitos/diodos" element={<Diodos />} />
+        <Route path="/circuitos/transistores" element={<Transistores />} />
+        <Route path="/circuitos/bibliografia" element={<Bibliografia />} />
       </Routes>
     </div>
   )

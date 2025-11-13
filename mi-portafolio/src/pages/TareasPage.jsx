@@ -33,6 +33,12 @@ function TareasPage() {
           <Link to="/tarea11"><button>Ver tarea</button></Link>
         </div>
 
+
+          <div className="tarea-card">
+            <h3>Tarea de circuitos</h3>
+            <p>Explicacion de los elementos de circuitos</p>
+            <Link to="/tareaCircuitos"><button>Ver tarea</button></Link>
+          </div>
       </div>
 
 
