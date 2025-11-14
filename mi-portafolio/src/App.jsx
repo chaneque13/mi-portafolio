@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* Página Principal - CON header */}
+        {/* Página Principal */}
         <Route path="/" element={
           <>
             <header>
@@ -60,7 +60,7 @@ function App() {
           </>
         } />
         
-        {/* Otras páginas - SIN el header principal */}
+        
         <Route path="/tareas" element={<TareasPage />} />
         <Route path="/tarea7" element={<Tarea7 />} />
         <Route path="/tarea8" element={<Tarea8 />} />
