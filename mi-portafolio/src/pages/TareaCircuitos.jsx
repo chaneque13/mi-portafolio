@@ -123,7 +123,7 @@ function TareaCircuitos() {
             <p>
               Cada componente electrónico tiene características únicas que determinan 
               su uso en los circuitos. <strong>Haz clic en cualquier componente</strong> 
-              para conocer sus detalles específicos, aplicaciones y ejemplos prácticos.
+               para conocer sus detalles específicos, aplicaciones y ejemplos prácticos.
             </p>
           </div>
         </section>

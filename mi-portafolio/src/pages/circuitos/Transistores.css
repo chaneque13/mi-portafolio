@@ -1,0 +1,299 @@
+/* Transistores.css */
+.tarea-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarea-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tarea-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tarea-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Secciones generales */
+.intro-section, .tipos-section, .configuraciones-section, .simbolos-section,
+.modos-section, .aplicaciones-section, .parametros-section, 
+.identificacion-section, .curiosidades-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formula-card {
+  background: #e8f4fd;
+  border-left: 4px solid #17a2b8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.formula-card h3 {
+  margin-top: 0;
+  color: #17a2b8;
+}
+
+/* Familias de transistores */
+.familias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.familia-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #28a745;
+}
+
+.familia-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.familia-card p {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.familia-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.familia-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Configuraciones */
+.configuraciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.configuracion-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #fd7e14;
+}
+
+.configuracion-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Símbolos */
+.simbolos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.simbolo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-top: 4px solid #667eea;
+}
+
+.simbolo-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.simbolo-visual {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Símbolos visuales de transistores */
+.transistor-simbolo, .mosfet-simbolo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.colector, .drenador, .base, .puerta, .emisor, .fuente {
+  padding: 0.3rem 0.8rem;
+  background: #667eea;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Modos de operación */
+.modos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.modo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #6f42c1;
+}
+
+.modo-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Aplicaciones */
+.aplicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.aplicacion-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #fd7e14;
+}
+
+.aplicacion-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.aplicacion-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+/* Parámetros */
+.parametros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.parametro-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #17a2b8;
+}
+
+.parametro-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Identificación y curiosidades */
+.identificacion-content, .curiosidades-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.identificacion-item, .curiosidad-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.identificacion-item h4, .curiosidad-item h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.nota {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.back-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarea-page {
+    padding: 1rem;
+  }
+  
+  .tarea-header h1 {
+    font-size: 2rem;
+  }
+  
+  .familias-grid,
+  .configuraciones-grid,
+  .simbolos-grid,
+  .modos-grid,
+  .aplicaciones-grid,
+  .parametros-grid,
+  .identificacion-content,
+  .curiosidades-content {
+    grid-template-columns: 1fr;
+  }
+}

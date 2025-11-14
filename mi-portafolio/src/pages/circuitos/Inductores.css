@@ -1,0 +1,277 @@
+/* Inductores.css */
+.tarea-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarea-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tarea-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tarea-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Secciones generales */
+.intro-section, .codigo-section, .tipos-section, .aplicaciones-section, 
+.caracteristicas-section, .comportamiento-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formula-card {
+  background: #e8f4fd;
+  border-left: 4px solid #17a2b8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.formula-card h3 {
+  margin-top: 0;
+  color: #17a2b8;
+}
+
+/* Tabla de códigos */
+.tabla-container {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.codigos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.codigos-table th {
+  background: #667eea;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.codigos-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.codigos-table tr:hover {
+  background: #f8f9fa;
+}
+
+/* Colores de la tabla */
+.color-black { background: #000; color: white; font-weight: bold; }
+.color-brown { background: #8B4513; color: white; font-weight: bold; }
+.color-red { background: #DC3545; color: white; font-weight: bold; }
+.color-orange { background: #FD7E14; color: white; font-weight: bold; }
+.color-yellow { background: #FFC107; color: black; font-weight: bold; }
+.color-green { background: #28A745; color: white; font-weight: bold; }
+.color-blue { background: #007BFF; color: white; font-weight: bold; }
+.color-purple { background: #6F42C1; color: white; font-weight: bold; }
+.color-gray { background: #6C757D; color: white; font-weight: bold; }
+.color-white { background: #FFFFFF; color: black; font-weight: bold; border: 1px solid #dee2e6; }
+.color-gold { background: #FFD700; color: black; font-weight: bold; }
+.color-silver { background: #C0C0C0; color: black; font-weight: bold; }
+
+/* Ejemplos de códigos */
+.ejemplos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.ejemplo-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.ejemplo-item h4 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Courier New', monospace;
+}
+
+.resultado {
+  background: #d1ecf1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Tipos de inductores */
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tipo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #28a745;
+}
+
+.tipo-card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.tipo-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.tipo-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Aplicaciones */
+.aplicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.aplicacion-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #fd7e14;
+}
+
+.aplicacion-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.aplicacion-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+/* Características */
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.caracteristica-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.caracteristica-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.conversion-card {
+  background: #fff3cd;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.conversion-card p {
+  margin: 0.3rem 0;
+  font-weight: bold;
+}
+
+/* Comportamiento */
+.comportamiento-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.comportamiento-item {
+  background: #e8f4fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #17a2b8;
+}
+
+.comportamiento-item h4 {
+  margin-top: 0;
+  color: #17a2b8;
+}
+
+.back-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.back-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarea-page {
+    padding: 1rem;
+  }
+  
+  .tarea-header h1 {
+    font-size: 2rem;
+  }
+  
+  .tipos-grid,
+  .aplicaciones-grid,
+  .caracteristicas-grid,
+  .comportamiento-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,283 @@
+/* Diodos.css */
+.tarea-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarea-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tarea-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tarea-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Secciones generales */
+.intro-section, .simbolos-section, .tipos-section, .caracteristicas-section, 
+.aplicaciones-section, .polaridad-section, .precauciones-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formula-card {
+  background: #e8f4fd;
+  border-left: 4px solid #17a2b8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.formula-card h3 {
+  margin-top: 0;
+  color: #17a2b8;
+}
+
+/* Símbolos */
+.simbolos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.simbolo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-top: 4px solid #dc3545;
+}
+
+.simbolo-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.simbolo-visual {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Símbolos visuales de diodos */
+.diodo-simbolo, .led-simbolo, .zener-simbolo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.anodo, .catodo {
+  padding: 0.5rem;
+  background: #667eea;
+  color: white;
+  border-radius: 4px;
+}
+
+.cuerpo-diodo, .cuerpo-led, .cuerpo-zener {
+  width: 60px;
+  height: 30px;
+  background: #dc3545;
+  position: relative;
+}
+
+.cuerpo-diodo::after, .cuerpo-led::after, .cuerpo-zener::after {
+  content: '▶';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.cuerpo-led::before {
+  content: '⚡';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cuerpo-zener {
+  background: #fd7e14;
+}
+
+/* Tipos de diodos */
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tipo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #28a745;
+}
+
+.tipo-card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.tipo-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.tipo-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Características */
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.caracteristica-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.caracteristica-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Aplicaciones */
+.aplicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.aplicacion-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #fd7e14;
+}
+
+.aplicacion-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.aplicacion-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+/* Polaridad y precauciones */
+.polaridad-content, .precauciones-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.polaridad-item {
+  background: #e8f4fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #17a2b8;
+}
+
+.polaridad-item h4 {
+  margin-top: 0;
+  color: #17a2b8;
+}
+
+.precaucion-item {
+  background: #f8d7da;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #dc3545;
+}
+
+.precaucion-item h4 {
+  margin-top: 0;
+  color: #721c24;
+}
+
+.precaucion-item p {
+  color: #721c24;
+  margin: 0;
+}
+
+.back-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.back-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarea-page {
+    padding: 1rem;
+  }
+  
+  .tarea-header h1 {
+    font-size: 2rem;
+  }
+  
+  .simbolos-grid,
+  .tipos-grid,
+  .caracteristicas-grid,
+  .aplicaciones-grid,
+  .polaridad-content,
+  .precauciones-content {
+    grid-template-columns: 1fr;
+  }
+}
